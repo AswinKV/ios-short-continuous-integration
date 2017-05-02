@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import RomanNumeralCalculator
 
 class RomanNumeralCalculatorTests: XCTestCase {
     
@@ -30,6 +31,12 @@ class RomanNumeralCalculatorTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testRoman(){
+        XCTAssertTrue(toRoman(1) == "I")
+        XCTAssertTrue(toRoman(2) == "II")
+        XCTAssertTrue(toRoman(9) == "IX")
     }
     
 }
