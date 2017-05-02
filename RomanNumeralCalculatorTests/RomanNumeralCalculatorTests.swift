@@ -35,7 +35,7 @@ class RomanNumeralCalculatorTests: XCTestCase {
     
     func testRoman(){
         XCTAssertTrue(toRoman(1) == "I")
-        XCTAssertTrue(toRoman(2) == "III")
+        XCTAssertTrue(toRoman(2) == "II")
         XCTAssertTrue(toRoman(9) == "IX")
     }
     
